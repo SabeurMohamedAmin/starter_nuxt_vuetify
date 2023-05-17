@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "starter_nuxt_vuetify",
   "private": true,
   "scripts": {
     "build": "nuxt build",
