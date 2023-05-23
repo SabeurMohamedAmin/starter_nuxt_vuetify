@@ -1,5 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  modules: ["@nuxt/devtools"],
+  devtools: {
+    // Enable devtools (default: true)
+    enabled: true
+  },
   css: [
     '@mdi/font/css/materialdesignicons.min.css',
     ],
@@ -13,6 +18,4 @@ export default defineNuxtConfig({
       'process.env.DEBUG': false,
     },
   },
-
-  modules: ["@nuxt/devtools"]
 })
