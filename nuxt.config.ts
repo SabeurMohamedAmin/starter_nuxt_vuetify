@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   modules: ["@nuxt/devtools"],
   devtools: {
@@ -8,7 +9,7 @@ export default defineNuxtConfig({
   css: [
     '@mdi/font/css/materialdesignicons.min.css',
     ],
-
+  plugins:["vuetify"],
   build: {
     transpile: ['vuetify'],
   },
