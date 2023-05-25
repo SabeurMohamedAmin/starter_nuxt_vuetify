@@ -9,10 +9,10 @@ import myTheme from "@/plugins/themes/simpleTheme.js";
 
 export default defineNuxtPlugin((nuxtApp) => {
   const vuetify = createVuetify({
-    treeShake: true,
-    ssr: true,
-    components,
     directives,
+    components,
+    ssr: true,
+    treeShake: true,
     theme: {
       defaultTheme: "myTheme",
       themes: {
