@@ -6,8 +6,8 @@ const courses = useCoursData();
 const chapter =  computed( ()=>{
   return courses.chapters.find((chapter)=> chapter.slug === params.chapterSlug);
 })
-const lesson = computed(()=>{
-  return chapter.value.find((lesson)=> lesson.slug=== params.lessonSlug);
+const lesson = computed( ()=>{
+  return chapter.value.lessons.find((lesson)=> lesson.slug=== params.lessonSlug);
 })
 </script>
 
@@ -20,6 +20,7 @@ const lesson = computed(()=>{
     <ul>
       <li>
         <h2>{{chapter.title}}</h2>
+        <h2>{{lesson.title}}</h2>
         <ul>
           <li v-for="lesson in chapter.lessons" :key="lesson.slug">
             <h5>{{lesson.title}}</h5>
