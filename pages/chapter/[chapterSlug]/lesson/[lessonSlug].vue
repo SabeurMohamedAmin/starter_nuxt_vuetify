@@ -6,6 +6,9 @@ const courses = useCoursData();
 const chapter =  computed( ()=>{
   return courses.chapters.find((chapter)=> chapter.slug === params.chapterSlug);
 })
+const lesson = computed(()=>{
+  return chapter.value.find((lesson)=> lesson.slug=== params.lessonSlug);
+})
 </script>
 
 <template>
