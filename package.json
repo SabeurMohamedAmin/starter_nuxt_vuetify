@@ -1,5 +1,5 @@
 {
-  "name": "starter_nuxt_vuetify",
+  "name": "nuxt_autel_coverage_pdf_viewer",
   "private": true,
   "scripts": {
     "build": "nuxt build",
